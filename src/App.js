@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -12,6 +11,7 @@ function App() {
 
   useEffect(() => {
     fetchCSVData(); // Fetch the CSV data when the component mounts
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // The empty array ensures that this effect runs only once, like componentDidMount
 
   const fetchCSVData = () => {
